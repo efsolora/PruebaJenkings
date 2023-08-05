@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('git repo & clean') {
 			steps{
-				bat "rmdir /s /q pruebaJ"
+				bat "rmdir /s /q C:/ProgramData/Jenkins/.jenkins/workspace/pruebaJ""
                 		bat "git clone https://github.com/efsolora/PruebaJenkings"
 			}
 		}
