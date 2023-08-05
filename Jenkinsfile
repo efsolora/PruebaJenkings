@@ -9,7 +9,7 @@ pipeline {
 
 		stage('test') {
 			steps{
-				sh ".\gradlew clean test aggregate"
+				sh "gradlew clean test aggregate"
 			}
 		}		
 	}
