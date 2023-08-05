@@ -10,7 +10,7 @@ pipeline {
 
 		stage('test') {
 			steps{
-				cd "C:/ProgramData/Jenkins/.jenkins/workspace/pruebaJ"
+				sh  "cd C:/ProgramData/Jenkins/.jenkins/workspace/pruebaJ"
 				sh "gradlew clean test aggregate"
 			}
 		}		
