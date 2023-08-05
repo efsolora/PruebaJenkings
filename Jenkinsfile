@@ -9,7 +9,7 @@ pipeline {
 		}
 		stage('test') {
 			steps{
-				bat "cd C:\ProgramData\Jenkins\.jenkins\workspace\pruebaJ"
+				bat "cd C:/ProgramData/Jenkins/.jenkins/workspace/pruebaJ/PruebaJenkings"
 				bat "gradlew clean test aggregate"
 				
 			}
