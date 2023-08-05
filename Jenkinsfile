@@ -3,7 +3,15 @@ pipeline {
 	stages {
 		stage('git repo & clean') {
 			steps{
-				bat "git clone https://github.com/efsolora/PruebaJenkings"
+				script {
+                    			try {
+                				bat "git clone https://github.com/efsolora/PruebaJenkings"
+                    }
+                    			catch (ex) {
+                        			bat "rmdir C:/ProgramData/Jenkins/.jenkins/workspace/pruebaJ"
+                    }
+                }
+				
 				
 			}
 		}
