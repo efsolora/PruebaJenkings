@@ -8,7 +8,7 @@ pipeline {
                 				bat "git clone https://github.com/efsolora/PruebaJenkings"
                     }
                     			catch (ex) {
-                        			bat "rmdir C:/ProgramData/Jenkins/.jenkins/workspace/pruebaJ"
+                        			bat "rm C:/ProgramData/Jenkins/.jenkins/workspace/pruebaJ"
                     }
                 }
 				
