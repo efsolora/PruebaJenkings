@@ -10,7 +10,7 @@ pipeline {
 			steps{
 				bat "cd C:/ProgramData/Jenkins/.jenkins/workspace/pruebaJ"
 				bat "gradlew clean test aggregate"
-				bat "rmdir C:/ProgramData/Jenkins/.jenkins/workspace/pruebaJ
+				bat "rmdir C:/ProgramData/Jenkins/.jenkins/workspace/pruebaJ"
 			}
 		}	
 
