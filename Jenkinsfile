@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('git repo & clean') {
 			steps{
-				bat "https://github.com/efsolora/PruebaJenkings"
+				bat "git clone https://github.com/efsolora/PruebaJenkings"
 				
 			}
 		}
