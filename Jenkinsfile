@@ -3,9 +3,7 @@ pipeline {
 	stages {
 		stage('git repo & clean') {
 			steps{
-				
                 		bat "git clone https://github.com/efsolora/PruebaJenkings"
-                    
                 }
 				
 				
@@ -18,11 +16,6 @@ pipeline {
 				bat "gradlew clean test aggregate"
 				bat "rmdir C:/ProgramData/Jenkins/.jenkins/workspace/pruebaJ
 			}
-		}		
-	}
-
-
-
-
+		}	
 
 }
